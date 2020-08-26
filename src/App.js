@@ -8,21 +8,19 @@ import {Route} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import Friends from "./components/Friends/Friends";
 
 const App = (props) => {
     return (
         <div className='app-wrapper'>
             <Header/>
-            <Navbar state={props.state.navbar}/>
+            <Navbar/>
             <div className='app-wrapper-content'>
                 <Route path='/profile'
                        render={() => <Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />}/>
                 <Route path='/dialogs' render={() => <Dialogs store={props.store} />}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>
-                <Route path='/settings' component={Settings}/>
-                <Route path='/friends' component={Friends}/>
+                <Route path='/settings' component={Settings}/>               
             </div>
         </div>
     );

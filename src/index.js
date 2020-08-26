@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
-import store from "./redux/state";
+import store from "./redux/reduxStore";
 
 export let _callSubcsriber = (state) =>{
     ReactDOM.render(
@@ -19,7 +19,10 @@ export let _callSubcsriber = (state) =>{
 
 _callSubcsriber(store.getState());
 
-store.subscribe(_callSubcsriber);
+store.subscribe(() => {
+    let state = store.getState(); 
+    _callSubcsriber(state)
+});
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
