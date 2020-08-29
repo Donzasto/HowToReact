@@ -5,12 +5,15 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import store from "./redux/reduxStore";
+import {Provider} from "react-redux";
 
-export let _callSubcsriber = (state) =>{
+export let _callSubcsriber = (state) => {
     ReactDOM.render(
         <React.StrictMode>
             <BrowserRouter>
-                <App state={state} dispatch={store.dispatch.bind(store)} store={store}/>
+                <Provider store={store}>
+                    <App />
+                </Provider>
             </BrowserRouter>
         </React.StrictMode>,
         document.getElementById('root')
@@ -20,7 +23,7 @@ export let _callSubcsriber = (state) =>{
 _callSubcsriber(store.getState());
 
 store.subscribe(() => {
-    let state = store.getState(); 
+    let state = store.getState();
     _callSubcsriber(state)
 });
 // If you want your app to work offline and load faster, you can change
