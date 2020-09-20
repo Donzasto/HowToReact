@@ -8,7 +8,6 @@ import thunkMiddleware from "redux-thunk"
 
 const { createStore, combineReducers } = require("redux");
 
-
 let reducers = combineReducers({
     profilePage: profileReducer, 
     navbarPage: navbarReducer,
