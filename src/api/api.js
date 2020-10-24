@@ -1,15 +1,15 @@
 import * as axios from "axios";
 
-let instance = axios.create({
+const instance = axios.create({
     withCredentials: true,
     baseURL: "https://social-network.samuraijs.com/api/1.0/",
     headers: {"API-KEY": process.env.REACT_APP_API_KEY}
 });
 
-export const userAPI = {
+export const usersAPI = {
     getUsers(currentPage = 1, pageSize = 10) {
-        return instance.get(`users?page=${currentPage}&count=${pageSize}`,
-        ).then(response => response.data)
+        return instance.get(`users?page=${currentPage}&count=${pageSize}`)
+            .then(response => {return response.data})
     },
     follow(userId) {
         return instance.post(`follow/${userId}`)
@@ -42,7 +42,7 @@ export const authAPI = {
     login(email, password, rememberMe = false) {
         return instance.post(`auth/login`, {email, password, rememberMe});
     },
-    logout(email, password, rememberMe = false) {
+    logout() {
         return instance.delete(`auth/login`);
     }
 }
