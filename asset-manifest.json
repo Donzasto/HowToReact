@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/HowToReact/static/css/main.214f2d5c.chunk.css",
+    "main.js": "/HowToReact/static/js/main.7c09358b.chunk.js",
+    "main.js.map": "/HowToReact/static/js/main.7c09358b.chunk.js.map",
+    "runtime-main.js": "/HowToReact/static/js/runtime-main.b03eb509.js",
+    "runtime-main.js.map": "/HowToReact/static/js/runtime-main.b03eb509.js.map",
+    "static/js/2.b85feea1.chunk.js": "/HowToReact/static/js/2.b85feea1.chunk.js",
+    "static/js/2.b85feea1.chunk.js.map": "/HowToReact/static/js/2.b85feea1.chunk.js.map",
+    "static/css/3.20a2adfd.chunk.css": "/HowToReact/static/css/3.20a2adfd.chunk.css",
+    "static/js/3.64177306.chunk.js": "/HowToReact/static/js/3.64177306.chunk.js",
+    "static/js/3.64177306.chunk.js.map": "/HowToReact/static/js/3.64177306.chunk.js.map",
+    "static/css/4.539e0249.chunk.css": "/HowToReact/static/css/4.539e0249.chunk.css",
+    "static/js/4.7d3627f2.chunk.js": "/HowToReact/static/js/4.7d3627f2.chunk.js",
+    "static/js/4.7d3627f2.chunk.js.map": "/HowToReact/static/js/4.7d3627f2.chunk.js.map",
+    "index.html": "/HowToReact/index.html",
+    "precache-manifest.9db3f518627f414cf6c585f73d8b74a4.js": "/HowToReact/precache-manifest.9db3f518627f414cf6c585f73d8b74a4.js",
+    "service-worker.js": "/HowToReact/service-worker.js",
+    "static/css/3.20a2adfd.chunk.css.map": "/HowToReact/static/css/3.20a2adfd.chunk.css.map",
+    "static/css/4.539e0249.chunk.css.map": "/HowToReact/static/css/4.539e0249.chunk.css.map",
+    "static/css/main.214f2d5c.chunk.css.map": "/HowToReact/static/css/main.214f2d5c.chunk.css.map",
+    "static/js/2.b85feea1.chunk.js.LICENSE.txt": "/HowToReact/static/js/2.b85feea1.chunk.js.LICENSE.txt",
+    "static/media/preloader.svg": "/HowToReact/static/media/preloader.6e7c9db7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b03eb509.js",
+    "static/js/2.b85feea1.chunk.js",
+    "static/css/main.214f2d5c.chunk.css",
+    "static/js/main.7c09358b.chunk.js"
+  ]
+}
