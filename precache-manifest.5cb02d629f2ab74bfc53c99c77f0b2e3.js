@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f1c30c618dbc24ecb2a38d8cf0c4c77",
+    "revision": "f1109c8665a1596dacb36f61edd0a85f",
     "url": "/HowToReact/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HowToReact/static/css/4.539e0249.chunk.css"
   },
   {
-    "revision": "ef8bdd9a7038c27f5378",
+    "revision": "0b5d96eaebf3f967b0fc",
     "url": "/HowToReact/static/css/main.214f2d5c.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HowToReact/static/js/4.7d3627f2.chunk.js"
   },
   {
-    "revision": "ef8bdd9a7038c27f5378",
-    "url": "/HowToReact/static/js/main.4a07fbf2.chunk.js"
+    "revision": "0b5d96eaebf3f967b0fc",
+    "url": "/HowToReact/static/js/main.cc27759a.chunk.js"
   },
   {
     "revision": "dcd2b5ad10b0f50263f5",
