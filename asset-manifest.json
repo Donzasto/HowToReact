@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/HowToReact/static/css/main.214f2d5c.chunk.css",
-    "main.js": "/HowToReact/static/js/main.b88325f4.chunk.js",
-    "main.js.map": "/HowToReact/static/js/main.b88325f4.chunk.js.map",
+    "main.js": "/HowToReact/static/js/main.4a07fbf2.chunk.js",
+    "main.js.map": "/HowToReact/static/js/main.4a07fbf2.chunk.js.map",
     "runtime-main.js": "/HowToReact/static/js/runtime-main.b03eb509.js",
     "runtime-main.js.map": "/HowToReact/static/js/runtime-main.b03eb509.js.map",
     "static/js/2.b85feea1.chunk.js": "/HowToReact/static/js/2.b85feea1.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/4.7d3627f2.chunk.js": "/HowToReact/static/js/4.7d3627f2.chunk.js",
     "static/js/4.7d3627f2.chunk.js.map": "/HowToReact/static/js/4.7d3627f2.chunk.js.map",
     "index.html": "/HowToReact/index.html",
-    "precache-manifest.2476429a09cd6173e2519a7428d008c7.js": "/HowToReact/precache-manifest.2476429a09cd6173e2519a7428d008c7.js",
+    "precache-manifest.74849a884955e4abef82491ddff5bd53.js": "/HowToReact/precache-manifest.74849a884955e4abef82491ddff5bd53.js",
     "service-worker.js": "/HowToReact/service-worker.js",
     "static/css/3.20a2adfd.chunk.css.map": "/HowToReact/static/css/3.20a2adfd.chunk.css.map",
     "static/css/4.539e0249.chunk.css.map": "/HowToReact/static/css/4.539e0249.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.b03eb509.js",
     "static/js/2.b85feea1.chunk.js",
     "static/css/main.214f2d5c.chunk.css",
-    "static/js/main.b88325f4.chunk.js"
+    "static/js/main.4a07fbf2.chunk.js"
   ]
 }
