@@ -2,18 +2,26 @@ import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
+import ava from "../../../assets/images/ava.jpg";
 
-const ProfileInfo = ({profile, status, updateStatus}) => {
+const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
     if (!profile) {
         return <Preloader/>
     }
+
+    const onMainPhotoSelected = (e) => {
+        if(e.target.files.length){
+            savePhoto(e.target.files[0])
+        }
+    }
+
     return (
         <div>
-            <div>
-                <img src='https://www.meme-arsenal.com/memes/4755e2d723dc73f9757832eff0992707.jpg'/>
-            </div>
             <div className={s.descriptionBlock}>
-                <img src={profile.photos.large}/>
+                <img
+                    src={profile.photos.large || ava}
+                    className={s.mainPhoto}/>
+                {isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}
                 <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
 
