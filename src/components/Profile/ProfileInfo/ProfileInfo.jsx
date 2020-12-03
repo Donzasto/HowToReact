@@ -38,7 +38,6 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
                     }} profile={profile} isOwner={isOwner}/>}
                 <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
-
         </div>)
 }
 
