@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import {withRouter, Route, BrowserRouter} from "react-router-dom";
+import {withRouter, Route, BrowserRouter, Redirect} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
@@ -19,8 +19,18 @@ const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsCo
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends React.Component {
+    catchAllUnhandledErrors = (promiseRejectEvent) => {
+        alert(promiseRejectEvent);
+    }
+
     componentDidMount() {
+
         this.props.initializeApp();
+        window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors);
     }
 
     render() {
@@ -33,15 +43,18 @@ class App extends React.Component {
                 <HeaderContainer/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
+                    <Route exact path='/'
+                           render={() => <Redirect to={"/profile"}/>}/>
                     <Route path='/profile/:userId?'
                            render={withSuspense(ProfileContainer)}/>
                     <Route path='/dialogs'
-                           render={withSuspense(DialogsContainer )}/>
+                           render={withSuspense(DialogsContainer)}/>
                     <Route path='/users' render={() => <UsersContainer/>}/>
                     <Route path='/news' component={News}/>
                     <Route path='/music' component={Music}/>
                     <Route path='/settings' component={Settings}/>
                     <Route path='/login' component={LoginPage}/>
+                    <Route path='*' render={() => <div>404 NOT FOUND</div>}/>
                 </div>
             </div>
         );
